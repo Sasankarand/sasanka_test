@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company – Welcome</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#navbar-brand">
+          Company Logo
+        </a>
+
+        <div class="navbar-right-group">
+          <!-- CUSTOM LANGUAGE SWITCHER -->
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-btn" id="langBtn" aria-expanded="false">
+              <span class="lang-flag" id="langFlag">🇬🇧</span>
+              <span class="lang-label" id="langLabel">EN</span>
+              <i class="fas fa-chevron-down lang-chevron" id="langChevron"></i>
+            </button>
+            <ul class="lang-dropdown" id="langDropdown">
+              <li class="lang-option active" data-lang="en" data-flag="🇬🇧" data-label="EN">
+                <span class="lang-option-flag">🇬🇧</span>
+                <span class="lang-option-name">English</span>
+                <i class="fas fa-check lang-check"></i>
+              </li>
+              <li class="lang-option" data-lang="si" data-flag="🇱🇰" data-label="SI">
+                <span class="lang-option-flag">🇱🇰</span>
+                <span class="lang-option-name">සිංහල</span>
+                <i class="fas fa-check lang-check"></i>
+              </li>
+              <li class="lang-option" data-lang="ta" data-flag="🇱🇰" data-label="TA">
+                <span class="lang-option-flag">🇱🇰</span>
+                <span class="lang-option-name">தமிழ்</span>
+                <i class="fas fa-check lang-check"></i>
+              </li>
+            </ul>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav gap-1 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news" data-i18n="nav_features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="hero-title" data-i18n="hero_title">Welcome to<br/>
+            <p class="hero-sub mt-3" data-i18n="hero_sub">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 data-i18n="nav_about">About Us</h2>
+        </div>
+        <p class="about-text reveal" data-i18n="about_text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+        </p>
+      </div>
+    </section>
+
+    <!-- NEWS / FEATURES -->
+    <section id="news">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 data-i18n="news_title">Latest News</h2>
+        </div>
+        <div class="position-relative">
+          <div class="row gy-4" id="newsRow">
+            <div class="col-md-4 reveal">
+              <div class="news-card">
+                <div style="height:200px;overflow:hidden;background:linear-gradient(135deg,#1e3a8a,#3b82f6);display:flex;align-items:center;justify-content:center;">
+                  <img src="images/img1.png" class="news-img" alt="News 1" />
+                </div>
+                <div class="news-body">
+                  <p data-i18n="news_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                  <a href="#" class="news-read"><span data-i18n="read_more">Read</span> <i class="fas fa-arrow-right fa-xs"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 reveal">
+              <div class="news-card">
+                <div style="height:200px;overflow:hidden;background:linear-gradient(135deg,#7c3aed,#2563eb);display:flex;align-items:center;justify-content:center;">
+                  <img src="images/img2.png" class="news-img" alt="News 2" />
+                </div>
+                <div class="news-body">
+                  <p data-i18n="news_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                  <a href="#" class="news-read"><span data-i18n="read_more">Read</span> <i class="fas fa-arrow-right fa-xs"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 reveal">
+              <div class="news-card">
+                <div style="height:200px;overflow:hidden;background:linear-gradient(135deg,#0f766e,#0ea5e9);display:flex;align-items:center;justify-content:center;">
+                  <img src="images/img3.png" class="news-img" alt="News 3" />
+                </div>
+                <div class="news-body">
+                  <p data-i18n="news_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                  <a href="#" class="news-read"><span data-i18n="read_more">Read</span> <i class="fas fa-arrow-right fa-xs"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="testimonials_title">Testimonials</h2>
+          <p class="section-sub" data-i18n="testimonials_sub">What our clients say about us</p>
+        </div>
+
+        <div class="testimonial-outer">
+          <button class="t-arrow" id="tPrev" aria-label="Previous">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="t-quote-icon"><i class="fas fa-quote-left"></i></div>
+                  <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore.
+                  </p>
+                  <div class="t-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                  <div class="t-author-row">
+                    <div class="t-avatar" style="background:linear-gradient(135deg,var(--navy),var(--sky))">LI</div>
+                    <div>
+                      <div class="testimonial-author">Lorem Ipsum Dolor</div>
+                      <div class="testimonial-role">Labore et Dolore</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="t-quote-icon"><i class="fas fa-quote-left"></i></div>
+                  <p class="testimonial-text">
+                    Sed diam voluptua consetetur sadipscing elitr. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                  </p>
+                  <div class="t-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                  <div class="t-author-row">
+                    <div class="t-avatar" style="background:linear-gradient(135deg,#7c3aed,#2563eb)">JS</div>
+                    <div>
+                      <div class="testimonial-author">Jane Smith</div>
+                      <div class="testimonial-role">Senior Manager</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="t-quote-icon"><i class="fas fa-quote-left"></i></div>
+                  <p class="testimonial-text">
+                    Invidunt ut labore et dolore magna aliquyam erat, sed diam
+                    voluptua. At vero eos et accusam et justo duo dolores.
+                  </p>
+                  <div class="t-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="t-author-row">
+                    <div class="t-avatar" style="background:linear-gradient(135deg,#0f766e,#0ea5e9)">AJ</div>
+                    <div>
+                      <div class="testimonial-author">Alex Johnson</div>
+                      <div class="testimonial-role">Product Director</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <button class="t-arrow" id="tNext" aria-label="Next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 data-i18n="contact_title">Contact Us</h2>
+        </div>
+        <div class="row gy-4 align-items-start">
+          <div class="reveal">
+            <iframe
+              class="map-frame"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-80.87%2C35.19%2C-80.80%2C35.24&layer=mapnik"
+              allowfullscreen loading="lazy" title="Company Location">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="footer-brand">Company Logo</div>
+            <div class="footer-address">
+              Kaos 69 Str. 15234, East Nile<br />
+              Athens, Greece<br />
+              +249 9123 456 78<br />
+              +249 9123 456 78
+            </div>
+          </div>
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <div class="footer-heading" data-i18n="stay_connected">Stay connected with</div>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f fa-sm"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter fa-sm"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram fa-sm"></i></a>
+              <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in fa-sm"></i></a>
+              <a href="#" title="YouTube"><i class="fab fa-youtube fa-sm"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+          <div data-i18n="footer_copy">© 2020 Reserved by Company Name Limited.</div>
+          <div>Published: March 05, 2024</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
